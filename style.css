@@ -188,60 +188,16 @@ textarea {
 
 
 
-.logo {
+.logo img {
 
+    width:220px;
 
-    display:flex;
-
-
-    flex-direction:column;
-
-
-    line-height:1;
-
+    height:auto;
 
 }
 
 
 
-.logo-name {
-
-
-    font-family:
-    'Manrope',
-    sans-serif;
-
-
-    font-size:22px;
-
-
-    font-weight:800;
-
-
-    letter-spacing:5px;
-
-
-}
-
-
-
-.logo-studio {
-
-
-    font-size:10px;
-
-
-    letter-spacing:7px;
-
-
-    color:
-    var(--rose);
-
-
-    margin-top:8px;
-
-
-}
 
 
 
