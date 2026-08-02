@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mariaeduardalopes521.github.io/lopesstudio.github.io/sitemap.xml
