@@ -304,8 +304,8 @@ if(form){
         .catch((error) => {
 
 
-            console.log("Erro:", error);
-
+console.log("Status:", error.status);
+console.log("Mensagem:", error.text);
 
             formStatus.textContent =
             "Não foi possível enviar sua mensagem. Tente novamente.";
