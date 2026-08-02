@@ -252,39 +252,76 @@ buttons.forEach(button => {
 
 
 
+/* ================= CONTACT FORM EMAILJS ================= */
+
+
+emailjs.init({
+    publicKey: "auogYB9Srn9Pzc80y",
+});
 
 
 
+const form = document.querySelector("#contact-form");
 
-/* ================= CONTACT FORM ================= */
 
-
-const form = document.querySelector(".contact-form");
+const formStatus = document.querySelector("#form-status");
 
 
 
 if(form){
 
 
-    form.addEventListener("submit", event => {
+    form.addEventListener("submit", function(event){
 
 
         event.preventDefault();
 
 
 
-        alert(
-            "Obrigada pelo contato! A Lopes Studio recebeu sua mensagem."
-        );
+        emailjs.sendForm(
+            "service_d5jbs3y",
+            "template_irv072b",
+            this
+        )
+
+        .then(() => {
+
+
+            formStatus.textContent =
+            "Mensagem enviada com sucesso! Entraremos em contato em breve.";
+
+
+            formStatus.style.color = "green";
+
+
+            form.reset();
 
 
 
-        form.reset();
+        })
+
+
+        .catch((error) => {
+
+
+            console.log("Erro:", error);
+
+
+            formStatus.textContent =
+            "Não foi possível enviar sua mensagem. Tente novamente.";
+
+
+            formStatus.style.color = "red";
+
+
+        });
 
 
 
     });
 
 
-
 }
+
+
+
