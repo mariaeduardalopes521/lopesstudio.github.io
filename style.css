@@ -2062,47 +2062,19 @@ section {
 
 /* ================= WHATSAPP FLOAT ================= */
 
+
 .whatsapp-float {
-
-    position: fixed;
-
-    right: 25px;
-
-    bottom: 25px;
-
-    width: 60px;
-
-    height: 60px;
-
-    border-radius: 50%;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    text-decoration: none;
-
-    font-size: 12px;
-
-    font-weight: 700;
-
-    color: white;
-
-    background: #25D366;
-
-    box-shadow: 0 10px 30px rgba(0,0,0,0.20);
-
-    z-index: 999;
-
-    transition: transform .3s ease;
-
-}
-
-
-.whatsapp-float:hover {
-
-    transform: translateY(-5px);
-
+    display: flex !important;
+    position: fixed !important;
+    right: 25px !important;
+    bottom: 25px !important;
+    width: 60px !important;
+    height: 60px !important;
+    background: #25D366 !important;
+    color: white !important;
+    border-radius: 50% !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    z-index: 9999 !important;
 }
